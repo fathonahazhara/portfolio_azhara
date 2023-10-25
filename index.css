@@ -439,70 +439,59 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
-
-.work__box {
+@media (max-width: 500px) {
+    .workwork{
+        padding-inline: 10px !important;
+       display: flex !important; 
+       gap: 40px !important;
+       flex-direction: column !important;
+    }
+}
+.workwork{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 30px;
+}
+.pr{
+    border: 5px var(--pink) solid;
+    border-radius: 20px;
     display: flex;
+    gap: 10px;
+    padding-block: 10px;
+    flex-direction: column;
     align-items: center;
+    padding-inline: 15px;
 }
-
-@media(max-width: 900px) {
-    .work__box {
-        align-items: initial;
-        flex-direction: column-reverse;
-    }
+.projcct{
+    border-radius: 20px;
 }
-
-.work__box:not(:last-child) {
-    margin-bottom: 25rem;
+.hz{
+    font-size: 3rem;
 }
-
-@media(max-width: 100px) {
-    .work__box:not(:last-child) {
-        margin-bottom: 20rem;
-    }
+.ahay:hover{
+    padding-inline: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 500ms;
+    outline: 2px solid var(--pink);
+}.ahay{
+    
+    border-radius: 10px;
+    padding-inline: 20px;
+    background-color: var(--pink);
 }
-
-.work__links {
+.links{
     display: flex;
+    margin-top: 20px;
+    padding-inline:10px;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    align-self: center;
 }
-
-.work__text {
-    flex: 0 0 30%;
-}
-
-.work__list {
-    /* list-style-type: square; */
-    list-style-position: inside;
-    margin-bottom: var(--gutter-normal);
-}
-
-.work__code {
-    display: block;
-    height: 3rem;
-    margin-left: var(--gutter-normal);
-    transition: all .3s;
-}
-
-.work__code:hover {
-    transform: scale(1.2);
-}
-
-.work__image-box {
-    margin-bottom: var(--gutter-normal);
-}
-
-@media(min-width: 901px) {
-    .work__image-box {
-        flex: 1;
-        margin: 0 0 0 10rem;
-    }
-}
-
-@media(max-width: 900px) {
-    .work__code {
-        height: 4rem;
-    }
+.githbx{
+    width: 10%;
 }
 
 /* --------------------------------------- */
